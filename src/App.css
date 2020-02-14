@@ -24,3 +24,10 @@ label {
 .card {
   background-color: cornflowerblue;
 }
+
+.pin {
+  font-size: 2.5rem;
+  margin-top: -3rem;
+  margin-right: -2rem;
+  color: purple;
+}

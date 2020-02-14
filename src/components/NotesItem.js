@@ -1,5 +1,6 @@
 import React from "react";
 import { MdEdit, MdDelete } from "react-icons/md";
+import { GoPin } from "react-icons/go";
 
 const NotesItem = ({ note, handleEdit, handleDelete }) => {
   const { id, subject, content } = note;
@@ -7,7 +8,12 @@ const NotesItem = ({ note, handleEdit, handleDelete }) => {
     <div className="col-md-4 mb-4">
       <div className="card">
         <div className="card-header">
-          <h3 className="text-danger">{subject}</h3>
+          <h3 className="text-danger">
+            {subject}
+            <span className="float-right">
+              <GoPin className="pin" />
+            </span>
+          </h3>
         </div>
         <div className="card-body">
           <p className="card-text text-warning">{content}</p>
